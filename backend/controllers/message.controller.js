@@ -1,5 +1,6 @@
 const Conversation = require('../models/conversation.model');
 const Message = require('../models/message.model'); // adjust the path
+const { getReceiverSocketId, io } = require('../socket/socket');
 
 
 module.exports.sendMessage = async (req,res)=>{
@@ -27,14 +28,18 @@ module.exports.sendMessage = async (req,res)=>{
         if(newMessage){
             conversation.messages.push(newMessage._id);
         }
-
-        // SOCKET IO
-
         // await conversation.save(); 1
         // await newMessage.save(); 2
 
         // this will run in parallel
         await Promise.all([conversation.save(), newMessage.save()]);
+
+        // SOCKET IO
+        const receiverSocketId = getReceiverSocketId(receiverId);
+        if(getReceiverSocketId){
+            io.to(receiverSocketId).emit("newMessage", newMessage);
+        }
+
 
         res.status(201).json(newMessage);
     }catch(error){
