@@ -1,6 +1,3 @@
----
-
-````markdown
 # 💬 Real-Time Chat Application
 
 A modern real-time chat application built using the **MERN stack** with **Socket.IO** for instant messaging. The app allows users to register, log in, and engage in live conversations with other users. Designed with responsiveness and smooth UX in mind, the frontend is powered by **React + Tailwind CSS + Zustand**, and the backend is handled with **Node.js + Express + MongoDB**.
@@ -8,13 +5,12 @@ A modern real-time chat application built using the **MERN stack** with **Socket
 ---
 
 ## 📸 Screenshots
+![Uploading Screenshot 2025-06-25 235051.png…]()
+![Screenshot 2025-06-25 235038](https://github.com/user-attachments/assets/6911c910-b6e8-4c9e-9e07-f2800f2a5cf7)
+![Screenshot 2025-06-25 235028](https://github.com/user-attachments/assets/5dfc2b93-6635-47a7-9efc-c4f75f79049e)
+![Screenshot 2025-06-25 235014](https://github.com/user-attachments/assets/896a7148-90a2-427e-b858-edeca86ab038)
 
-> _You can add screenshots of your app here (chat interface, login page, etc.)_
-> 
-> ```
-> ![Login Page](./screenshots/login.png)
-> ![Chat UI](./screenshots/chat-ui.png)
-> ```
+
 
 ---
 
@@ -33,20 +29,22 @@ A modern real-time chat application built using the **MERN stack** with **Socket
 ## 🚀 Technologies Used
 
 ### Frontend:
-- [React.js](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Zustand](https://github.com/pmndrs/zustand)
-- [Axios](https://axios-http.com/)
-- [Heroicons](https://heroicons.com/)
+
+- React.js
+- Vite
+- Tailwind CSS
+- Zustand
+- Axios
+- Heroicons
 
 ### Backend:
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB + Mongoose](https://mongoosejs.com/)
-- [Socket.IO](https://socket.io/)
-- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- Socket.IO
+- bcryptjs
+- jsonwebtoken
 
 ---
 
@@ -86,7 +84,7 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 ````
 
-Update frontend if needed with your own Vite environment variables (`VITE_API_URL` etc.) in `.env`:
+Create a `.env` file in the `frontend/` directory (if needed):
 
 ```env
 VITE_API_URL=http://localhost:5000/api
@@ -96,12 +94,12 @@ VITE_API_URL=http://localhost:5000/api
 
 ## 🔧 How to Run Locally
 
-### Prerequisites
+### ✅ Prerequisites
 
 * Node.js & npm installed
 * MongoDB running locally or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-### Clone the repository
+### 📥 Clone the repository
 
 ```bash
 git clone https://github.com/Chirag12216570/Real-Time-Chat-Application.git
@@ -118,7 +116,7 @@ npm install
 npm run dev
 ```
 
-Server will start on `http://localhost:5000`
+> Server will start on `http://localhost:5000`
 
 ---
 
@@ -130,15 +128,15 @@ npm install
 npm run dev
 ```
 
-Frontend will start on `http://localhost:5173`
+> Frontend will start on `http://localhost:5173`
 
 ---
 
 ## 🔁 Live Communication Flow
 
-1. User logs in and socket connection is established
+1. User logs in and a socket connection is established
 2. Each user is assigned a `socket.id`
-3. Messages are sent using `Socket.emit` and received using `Socket.on`
+3. Messages are sent using `socket.emit()` and received using `socket.on()`
 4. MongoDB stores conversation history and user data
 
 ---
@@ -172,11 +170,4 @@ Made with ❤️ by [Chirag Anand](https://github.com/Chirag12216570)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
----
-
-Let me know if you want this saved as a `.md` file or updated with actual screenshot links once you upload them. I can also help auto-generate GIFs or visuals for the UI.
-```
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
