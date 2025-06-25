@@ -5,7 +5,7 @@ A modern real-time chat application built using the **MERN stack** with **Socket
 ---
 
 ## 📸 Screenshots
-![Uploading Screenshot 2025-06-25 235051.png…]()
+![Screenshot 2025-06-25 235051](https://github.com/user-attachments/assets/3f4fb6d7-a0b3-497c-b169-c576af557e7b)
 
 ![Screenshot 2025-06-25 235038](https://github.com/user-attachments/assets/6911c910-b6e8-4c9e-9e07-f2800f2a5cf7)
 
