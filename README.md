@@ -116,7 +116,7 @@ cd Real-Time-Chat-Application
 ```bash
 cd backend
 npm install
-npm run dev
+nodemon server.js
 ```
 
 > Server will start on `http://localhost:5000`
