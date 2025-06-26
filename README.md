@@ -72,6 +72,7 @@ chat-app/
 ├── .env                # Environment variables (not shared)
 ├── .gitignore
 └── README.md
+└── package.json
 
 ````
 
