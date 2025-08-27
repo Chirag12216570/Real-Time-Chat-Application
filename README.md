@@ -78,20 +78,24 @@ chat-app/
 
 ---
 
+
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the `backend/` directory:
+Create a `.env` file in the `backend/` directory using the provided `.env.example` as a template:
 
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-````
+PORT=8000
+MONGODB_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret
+NODE_ENV=production
+```
+
+**Important:** Never commit your real `.env` file. Only share `.env.example` for reference.
 
 Create a `.env` file in the `frontend/` directory (if needed):
 
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:8000/api
 ```
 
 ---
