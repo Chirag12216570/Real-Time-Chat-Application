@@ -11,7 +11,7 @@ function Login() {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await login(username, password);
+        await login(username.trim(), password.trim());
     }
 
   return (
@@ -33,7 +33,7 @@ function Login() {
                     <label className="label">
                         <span className="text-base label-text">Password</span>
                     </label>
-                    <input type="text" placeholder='Enter password' className="w-full input input-bordered h-10" 
+                    <input type="password" placeholder='Enter password' className="w-full input input-bordered h-10" 
                     value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <Link to="/signup" className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
