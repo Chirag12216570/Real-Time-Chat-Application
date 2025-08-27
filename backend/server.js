@@ -27,7 +27,8 @@ app.use(cors({
         "https://real-time-chat-application-lime.vercel.app",
         "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app",
         "https://real-time-chat-application-git-main-chirags-projects-44a827c7.vercel.app",
-        "https://real-time-chat-application-lqa0q6a6g-chirags-projects-44a827c7.vercel.app"
+        "https://real-time-chat-application-lqa0q6a6g-chirags-projects-44a827c7.vercel.app",
+        "https://real-time-chat-application-4xl1bbdfi-chirags-projects-44a827c7.vercel.app"
     ],
     credentials: true
 }));
