@@ -26,6 +26,7 @@ app.use(cors({
         "http://localhost:3000",
         "https://real-time-chat-application-lime.vercel.app/",
         "https://real-time-chat-application-lime.vercel.app",
+        "https://real-time-chat-application-chirags-projects-44a827c7.vercel.app/login",
         "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app",
         "https://real-time-chat-application-git-main-chirags-projects-44a827c7.vercel.app",
         "https://real-time-chat-application-lqa0q6a6g-chirags-projects-44a827c7.vercel.app",
