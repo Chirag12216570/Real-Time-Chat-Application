@@ -1,6 +1,8 @@
+
 const express = require("express");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 const authRoutes = require("./routes/auth.routes");
 const messageRoutes = require("./routes/message.routes")
@@ -10,14 +12,19 @@ const { connectToMongoDB } = require("./db/connectToMongoDB");
 const {app, server} = require("./socket/socket");
 
 
-dotenv.config({ path: './.env' });
+dotenv.config({ path: '../.env' });
 const PORT = process.env.PORT || 5000;
+
 
 
 
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+    origin: ["http://localhost:3000", "https://real-time-chat-application-lime.vercel.app", "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app"],
+    credentials: true
+}));
 
 // app.get("/", (req, res) => {
 //     res.send("Hello, World!");
