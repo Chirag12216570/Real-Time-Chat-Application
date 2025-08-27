@@ -16,7 +16,9 @@ const io = new Server(server,{
         origin:[
             "http://localhost:3000",
             "https://real-time-chat-application-lime.vercel.app",
-            "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app"
+            "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app",
+            "https://real-time-chat-application-git-main-chirags-projects-44a827c7.vercel.app",
+            "https://real-time-chat-application-lqa0q6a6g-chirags-projects-44a827c7.vercel.app"
         ],
         methods:["GET","POST"],
         credentials: true
