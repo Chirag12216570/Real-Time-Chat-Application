@@ -10,7 +10,7 @@ const { connectToMongoDB } = require("./db/connectToMongoDB");
 const {app, server} = require("./socket/socket");
 
 
-dotenv.config({ path: '../.env' });
+dotenv.config({ path: './.env' });
 const PORT = process.env.PORT || 5000;
 
 
