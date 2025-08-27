@@ -22,7 +22,13 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: ["http://localhost:3000", "https://real-time-chat-application-lime.vercel.app", "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app"],
+    origin: [
+        "http://localhost:3000",
+        "https://real-time-chat-application-lime.vercel.app",
+        "https://real-time-chat-application-pr3pupbez-chirags-projects-44a827c7.vercel.app",
+        "https://real-time-chat-application-git-main-chirags-projects-44a827c7.vercel.app",
+        "https://real-time-chat-application-lqa0q6a6g-chirags-projects-44a827c7.vercel.app"
+    ],
     credentials: true
 }));
 
